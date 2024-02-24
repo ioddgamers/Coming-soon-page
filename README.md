@@ -26,6 +26,14 @@ Your users should be able to:
 I started off by structuring my HTML first, then I settled to start with the mobile version first in CSS before adapting it to desktop.
 Only after I was done did I start working on my JavaScript code.
 
+## JavaScript Pseudocode
+- create an onchange event in my input tag called isEmailFormatValid
+- Retrieve the input field from my webpage
+- Get the input by the user and store it in a variable
+- check if the email is formatted correctly
+
+
+
 ### Built with
 - Flex box
 - Mobile-first workflow
