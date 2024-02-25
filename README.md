@@ -37,3 +37,6 @@ Only after I was done did I start working on my JavaScript code.
 - Mobile-first workflow
 - HTML 5
 - JavaScript
+
+## Solution Page
+https://ioddgamers.github.io/Coming-soon-page/
