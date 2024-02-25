@@ -40,4 +40,6 @@ Only after I was done did I start working on my JavaScript code.
 
 ## Solution Page
 https://ioddgamers.github.io/Coming-soon-page/
+
+
 https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub?share=true
