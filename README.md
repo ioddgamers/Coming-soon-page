@@ -26,12 +26,10 @@ Your users should be able to:
 I started off by structuring my HTML first, then I settled to start with the mobile version first in CSS before adapting it to desktop.
 Only after I was done did I start working on my JavaScript code.
 
-## JavaScript Pseudocode
-- create an onchange event in my input tag called isEmailFormatValid
-- Retrieve the input field from my webpage
-- Get the input by the user and store it in a variable
-- check if the email is formatted correctly
-
+## JavaScript 
+- Retrieved the elements I wanted to work on in JavaScript (the input field, the error message and the error icon which are both hidden)
+- used an event listener for a change in the input field and created a function which retrieves the user's input, compares it with the email format.
+- Used an if statement to check if the user's input is valid or if it is invalid.
 
 
 ### Built with
