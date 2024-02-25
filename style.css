@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    margin: 1.5rem;
+}
+
+.hero-mobile {
+    width: 100%;
+    margin: 0;
+}
+.hero-desktop {
+    display: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Red);
+    letter-spacing: 0.5rem;
+    margin: 1.5rem;
+}
+
+h1 span {
+    font-weight: 300;
+    color: var(--Desaturated-Red);
+}
+
+p {
+    color: var(--Desaturated-Red);
+    font-size: 1rem;
+    margin: 0 2.5rem;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.input-container {
+    position: relative;
+}
+
+input {
+    width: 19rem;
+    height: 3rem;
+    padding-left: 1.8rem;
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: var(--Desaturated-Red);
+}
+
+.button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: -3px 10px 20px rgba(188, 76, 76, 0.336);
+    width: 5rem;
+}
+
+#errorMessage {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 1.4rem;
+    position: relative;
+    right: 7%;
+}
+
+.error {
+    position: absolute;
+    right: 4.5rem;
+    top: 0.7rem;
+}
+
+.hidden {
+    display: none;
+}
+
+a:visited {
+    color: var(--Soft-Red);
+    text-decoration: none;
+}
+
+/*-------------Desktop Styles------------------------*/
+
+@media (min-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+    }
+
+    .parent-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        padding: 2rem 13rem 2rem 13rem;
+        
+    }
+
+    .hero-desktop {
+        display: block;
+        margin: 0;
+        height: 100vh;
+        width: auto;
+    }
+    .hero-mobile {
+        display: none;
+    }
+
+    .logo {
+        width: 7rem;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: 600;
+        color: var(--Dark-Grayish-Red);
+        letter-spacing: 0.7rem;
+        margin: 4.5rem  0  1.5rem  1.5rem;
+        text-align: left;
+    }
+    
+    h1 span {
+        font-weight: 300;
+        color: var(--Desaturated-Red);
+    }
+    
+    p {
+        color: var(--Desaturated-Red);
+        font-size: 1.2rem;
+        margin: 0 0 0 1.5rem;
+        text-align: left;
+        line-height: 1.7rem;
+    }
+
+    .form {
+        display: flex;
+    }
+    input {
+        width: 30rem;
+    }
+
+    input:focus {
+        border: 2px solid var(--Soft-Red);
+        background: none;
+    }
+    #errorMessage {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        line-height: 1.4rem;
+        position: relative;
+        right: 25%;
+    }
+
+    .button {
+        width: 6rem;
+    }
+
+    .button:hover {
+        width: 6.5em;
+    }
+
+    .error {
+        position: absolute;
+        right: 7rem;
+        top: 0.7rem;
+    }
+    
+}
+
